@@ -13,16 +13,13 @@ public class ArrayListQuestions {
 
         // Enter 10 integers in arraylist
         for(int  i = 0;i < 10; i++) {
-
-            num = sc.nextInt();
-            arr.add(num);
+            arr.add(sc.nextInt());
         }
 
         System.out.println("Size of arraylist : " + arr.size());
 
         // Printing Elements of arraylist
         for(int i : arr) {
-
             System.out.println(i);
         }
 
