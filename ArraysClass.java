@@ -5,7 +5,6 @@ public class ArraysClass {
     static void printArray(int[] arr) {
 
         for(int a : arr) {
-
             System.out.println(a);
         }
         System.out.println();

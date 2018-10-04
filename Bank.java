@@ -7,12 +7,10 @@ public class Bank {
     private double balance;
     
     Bank() {
-
         count++;
     }
 
     Bank(String n, String add, double bal) {
-
         name = n;
         address = add;
         balance = bal;
@@ -20,17 +18,13 @@ public class Bank {
     }
 
     void setInfo(String name, String address, double balance) {
-
-//        System.out.println("here");
         this.name = name;
         this.address = address;
         this.balance = balance;
     }
 
     void withdraw(double amt) {
-
         if(balance >= amt) {
-
             balance -= amt;
             System.out.println("Successfully Withdrawn Rs." + amt);
         }else
@@ -38,42 +32,35 @@ public class Bank {
     }
 
     void deposit(int amt) {
-
         balance += amt;
     }
 
     void getInfo() {
-
         System.out.println("Name : " + name);
         System.out.println("Address : " + address);
         System.out.println("balance : " + balance);
     }
 
     static void getBankName() {
-
         System.out.println("Bank Name : " + bank_name + "\n");
     }
 
     static void getTotal() {
-
         System.out.println("Total Depositors : " + count + "\n");
     }
 
     void exchangeAddress(Bank a) {
-
         String temp = a.address;
         a.address = this.address;
         this.address = temp;
     }
 
     static double avgBalance(Bank[] arr) {
-
         int len = arr.length;
         int i;
         double sum = 0;
 
         for(Bank cust : arr) {
-
             sum += cust.balance;
         }
         
@@ -98,8 +85,6 @@ public class Bank {
         arr[2].setInfo("Ayushi", "karnal", 300000);
         arr[3].setInfo("Gitesh", "Jhajjar", 100000);
         arr[4].setInfo("Peeyush", "bathinda", 200000);
-
-//        System.out.println("Here");
 
         getTotal();
 

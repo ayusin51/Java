@@ -29,7 +29,6 @@ public class ArrayLists {
         System.out.println(arrString);
 
         for(int i = 0; i < 15; i++) {
-
             arr.add(i % 5);
         }
 
@@ -51,7 +50,6 @@ public class ArrayLists {
         System.out.println("Array : ");
 
         for(int i : intArr) {
-
             System.out.println(i);
         }
 
